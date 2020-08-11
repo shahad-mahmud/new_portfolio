@@ -19,6 +19,11 @@ section {
     margin: 0;
 }
 
+h1 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: var(--header-letter-space);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -128,11 +133,6 @@ nav ul {
     font-size: 1.8rem;
 }
 
-.about_me h1 {
-    font-family: 'Cinzel', serif;
-    letter-spacing: var(--header-letter-space);
-}
-
 .about_me p {
     text-align: justify;
     font-family: 'Gentium Basic', serif;
@@ -189,15 +189,15 @@ nav ul {
 
 .project_section {
     background-color: white;
-    padding: 6vh 0 6vh 0;
+    padding: 6vh var(--sec-width) 6vh var(--sec-width);
     font-size: 1.8rem;
     text-align: center;
 }
 
 .project-card-holder {
     display: grid;
-    padding: 0 2vh 0 2vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2vh;
     grid-row-gap: 2vh;
 }
@@ -208,6 +208,12 @@ nav ul {
     border: 1px solid rgb(197, 196, 196);
     border-radius: 0.8rem;
     /* box-shadow: 0.4rem 0.4rem 5px 0px rgba(168, 167, 167, 0.986); */
+}
+
+.project a {
+    text-decoration: none;
+    text-emphasis: none;
+    color: rgb(175, 4, 4);
 }
 
 .project-tile {
@@ -222,19 +228,49 @@ nav ul {
 }
 
 .project-details {
-    margin-top: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     font-size: 1.6rem;
-    margin: 1rem;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    text-align: justify;
+    background-color: rgb(255, 250, 243);
+    margin-bottom: 0;
 }
 
 .project_details_btn {
     text-align: center;
     font-size: 1.7rem;
-    background-color: wheat;
+    background-color: #ffbd42;
     width: 100%;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     padding: 1.7vh 0 1.7vh 0;
+    cursor: pointer;
+}
+
+@media (max-width: 765px) {
+    .project-card-holder {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .project-card-holder {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 45em) {
+    .project_section {
+        padding: 6vh var(--sec-width-45) 6vh var(--sec-width-45);
+    }
+}
+
+@media (max-width: 28em) {
+    .project_section {
+        padding: 6vh var(--sec-width-28) 6vh var(--sec-width-28);
+    }
 }
 
 
@@ -282,7 +318,7 @@ nav ul {
 
 .footer_section {
     background-color: black;
-    padding: 6vh 0 6vh 0;
+    padding: 6vh var(--sec-width) 6vh var(--sec-width);
     font-size: 1.8rem;
     text-align: center;
     color: white;
@@ -379,24 +415,12 @@ nav ul {
 /* ---------------skill-------------------- */
 
 @media (max-width: 65em) {
-    .project-card-holder {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     .skill_container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 45em) {
-    .project-card-holder {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media (max-width: 28em) {
-    .project-card-holder {
-        grid-template-columns: 1fr;
-    }
     .skill_container {
         grid-template-columns: 1fr;
         width: 80%;
