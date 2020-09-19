@@ -20,7 +20,7 @@ section {
 }
 
 h1 {
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     letter-spacing: var(--header-letter-space);
 }
 
@@ -115,11 +115,6 @@ nav ul {
         text-align: center;
         margin: 0 2.5vh 0 2.5vh;
     }
-    .skill_container {
-        grid-template-columns: 1fr;
-        width: 70%;
-        margin: 0 auto;
-    }
 }
 
 
@@ -135,7 +130,7 @@ nav ul {
 
 .about_me p {
     text-align: justify;
-    font-family: 'Gentium Basic', serif;
+    font-family: "Gentium Basic", serif;
     margin-left: var(--sec-width);
     margin-right: var(--sec-width);
     letter-spacing: var(--par-letter-space);
@@ -277,59 +272,14 @@ nav ul {
 /*--------------------skills--------------------*/
 
 .skill_section {
-    background-color: #4c4c4c;
-    padding: 6vh 0 6vh 0;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-
-/*------------------experience------------------*/
-
-.experience_section {
-    background-color: #c51414;
-    padding: 6vh 0 6vh 0;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-
-/*------------------education------------------*/
-
-.edu_section {
-    background-color: #c51414;
-    padding: 6vh 0 6vh 0;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-
-/*-----------------certification-----------------*/
-
-.certifications_section {
-    background-color: #c51414;
-    padding: 6vh 0 6vh 0;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-
-/*------------------footer------------------*/
-
-.footer_section {
-    background-color: black;
+    background-color: #d1d7da;
     padding: 6vh var(--sec-width) 6vh var(--sec-width);
     font-size: 1.8rem;
     text-align: center;
-    color: white;
 }
-
-
-/* ---------skill------------------ */
 
 .skill_container {
     display: grid;
-    padding: 0 2vh 0 2vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2.5rem;
     grid-row-gap: 2vh;
@@ -338,30 +288,30 @@ nav ul {
 
 @keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 @-webkit-keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 @-moz-keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 @-o-keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 .bar {
-    background-color: #EEE;
+    background-color: #eee;
     padding: 2px;
     border-radius: 15px;
     margin-bottom: 5px;
@@ -411,19 +361,110 @@ nav ul {
     width: calc(95% - 10px);
 }
 
-
-/* ---------------skill-------------------- */
-
-@media (max-width: 65em) {
+@media (max-width: 45em) {
+    .skill_section {
+        padding: 6vh var(--sec-width-45) 6vh var(--sec-width-45);
+    }
     .skill_container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 28em) {
+    .skill_section {
+        padding: 6vh var(--sec-width-28) 6vh var(--sec-width-28);
+    }
     .skill_container {
         grid-template-columns: 1fr;
-        width: 80%;
-        margin: 0 auto;
     }
 }
+
+
+/*------------------experience------------------*/
+
+.experience_section {
+    background-color: #f9ffd8;
+    padding: 6vh var(--sec-width) 6vh var(--sec-width);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.experience_tile {
+    background-color: inherit;
+    /* border: 1px solid #9c9c9c; */
+    border-radius: 0.4em;
+    padding: 0.5em;
+    margin-bottom: 2vh;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.experience_tile .position {
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 550;
+}
+
+.experience_tile .organization {
+    text-align: left;
+    font-size: 1.9rem;
+}
+
+.experience_tile .duration {
+    text-align: left;
+    font-size: 1.85rem;
+}
+
+.experience_tile p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+@media (max-width: 45em) {
+    .experience_section {
+        padding: 6vh var(--sec-width-45) 6vh var(--sec-width-45);
+    }
+}
+
+@media (max-width: 28em) {
+    .experience_section {
+        padding: 6vh var(--sec-width-28) 6vh var(--sec-width-28);
+    }
+}
+
+
+/*------------------education------------------*/
+
+.edu_section {
+    background-color: #c51414;
+    padding: 6vh 0 6vh 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+/*-----------------certification-----------------*/
+
+.certifications_section {
+    background-color: #c51414;
+    padding: 6vh 0 6vh 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+/*------------------footer------------------*/
+
+.footer_section {
+    background-color: black;
+    padding: 6vh var(--sec-width) 6vh var(--sec-width);
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+
+/* ---------skill------------------ */
+
+
+/* ---------------skill-------------------- */

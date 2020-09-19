@@ -142,9 +142,25 @@
             <div class="bar front expert" data-skill="HTML5"></div>
         </div>
     </section>
-    <section id="experience" class="experience_section">
-        <h1>Experiences</h1>
+    <section id="volunteerExperience" class="experience_section">
+        <h1>Volunteer Experiences</h1>
+        <div class="experience_tile">
+            <div class="position">Joint General Secretary</div>
+            <div class="organization">Greater Dinajpur District Association, RUET</div>
+            <div class="duration">November, 2018 to June, 2019</div>
+            <p>
+                Working as a JGS helped me to learn leading people and teams to execute a goal. Acting in this role I organized and contributed in making plan in different events.
+            </p>
+        </div>
 
+        <div class="experience_tile">
+            <div class="position">Sports Secretary</div>
+            <div class="organization">Greater Dinajpur District Association, RUET</div>
+            <div class="duration">November, 2017 to November, 2018</div>
+            <p>
+                Acting on this role I lead a team to organize different sporting events in several occasions. This helped me a lot to learn leading, conducting a team, communicating with others etc.
+            </p>
+        </div>
     </section>
 
     <section id="education" class="edu_section">
